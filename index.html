@@ -105,7 +105,7 @@
     </p>
   </section>
 
-  <div class="audio-player-box">
+ <!-- <div class="audio-player-box">
     <h3>🎵 Senehasaka Ran Sithuwama </h3>
     
     <audio id="myMusicPlayer">
@@ -117,11 +117,24 @@
         <button class="control-btn btn-pause" onclick="pauseMusic()">Pause</button>
         <button class="control-btn btn-stop" onclick="stopMusic()">Stop</button>
     </div>
-</div>
+</div>-->
 
-<audio controls>
+<div class="music-card">
+    <div class="music-info">
+        <h3>🎵 දැන් වාදනය වේ</h3>
+        <p>Senehasaka Ran Sithuwama</p>
+    </div>
+    
+    <audio id="myMusicPlayer">
         <source src="song1.mp3" type="audio/mpeg">
     </audio>
+
+    <div class="player-controls">
+        <button class="play-btn" onclick="playMusic()">PLAY</button>
+        <button class="pause-btn" onclick="pauseMusic()">PAUSE</button>
+        <button class="stop-btn" onclick="stopMusic()">STOP</button>
+    </div>
+</div>
   
   <footer>
     <p>&copy; Welcome to R4D Coffee</p>
