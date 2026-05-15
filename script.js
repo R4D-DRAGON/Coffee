@@ -5,20 +5,12 @@ function showOffer() {
 
 function playMusic() {
     var myAudio = document.getElementById("myMusicPlayer");
-    if (myAudio) {
-        myAudio.play().catch(function(error) {
-            console.log("Play error: " + error);
-        });
-    } else {
-        console.log("Audio element not found!");
-    }
+    if (myAudio) { myAudio.play(); }
 }
 
 function pauseMusic() {
     var myAudio = document.getElementById("myMusicPlayer");
-    if (myAudio) {
-        myAudio.pause();
-    }
+    if (myAudio) { myAudio.pause(); }
 }
 
 function stopMusic() {
@@ -28,7 +20,4 @@ function stopMusic() {
         myAudio.currentTime = 0;
     }
 }
-
-function playMusic() {
-    alert("බොත්තම වැඩ කරනවා!");
     var myAudio = document.getElementById("myMusicPlayer");
