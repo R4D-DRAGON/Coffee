@@ -3,24 +3,28 @@ function showOffer() {
   document.getElementById("offerText").innerText = offer;
 }
 
-// ගීත පාලනය කරන ක්‍රියාවන් (Functions)
-var myAudio = document.getElementById("myMusicPlayer");
-
 function playMusic() {
+    var myAudio = document.getElementById("myMusicPlayer");
     if (myAudio) {
-        myAudio.play();
+        myAudio.play().catch(function(error) {
+            console.log("Play error: " + error);
+        });
+    } else {
+        console.log("Audio element not found!");
     }
 }
 
 function pauseMusic() {
+    var myAudio = document.getElementById("myMusicPlayer");
     if (myAudio) {
         myAudio.pause();
     }
 }
 
 function stopMusic() {
+    var myAudio = document.getElementById("myMusicPlayer");
     if (myAudio) {
         myAudio.pause();
-        myAudio.currentTime = 0; // සින්දුව මුලටම ගෙන යාම
+        myAudio.currentTime = 0;
     }
 }
