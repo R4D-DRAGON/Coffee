@@ -28,3 +28,7 @@ function stopMusic() {
         myAudio.currentTime = 0;
     }
 }
+
+function playMusic() {
+    alert("බොත්තම වැඩ කරනවා!");
+    var myAudio = document.getElementById("myMusicPlayer");
